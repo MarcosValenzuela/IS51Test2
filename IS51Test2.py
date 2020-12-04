@@ -14,3 +14,29 @@ once we get our number of grades, average grade, and percent grades above averag
 to the user using print function
 """
 
+"""
+main():
+    class_avg(Final.txt)
+
+class_avg(txt_file)
+    read in Final.txt
+
+    total = sum each grade from file
+    number_of_grades += count each time total increased
+    grade_book = [each grade from file]
+    average = total/number of grades
+
+    compare grades from grade_book to class_avg
+    if grade > class_avg
+        i += 1
+    percent_avg = i / number_of_grades
+
+    close the file
+
+    print("Number of grade: " ,int(number_of_grades)
+    print("Average grade:" , average)
+    print("percentage of grades above average: ", percent_average,"%")
+
+
+main ()
+"""
