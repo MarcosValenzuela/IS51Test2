@@ -40,3 +40,35 @@ class_avg(txt_file)
 
 main ()
 """
+
+def main():
+    class_avg("Final.txt")
+
+def class_avg(txt_file):
+    total = 0.0
+    number_of_grades = 0
+    average = 0.0
+    percent_average = 0.0
+
+    infile = open(txt_file, "r")
+    
+    for line in infile:
+        amount = float(line)
+        total += amount
+        number_of_grades += 1
+    average = total/number_of_grades
+
+    grade_book = infile.readlines()
+    counter = 0
+    for i in grade_book:
+        if float(i) > average:
+            counter += 1
+    percent_average = counter/number_of_grades
+    
+    infile.close()
+
+    print("Number of grade: " ,number_of_grades)
+    print("Average grade:" , average)
+    print("percentage of grades above average: ", percent_average,"%")
+
+main()
